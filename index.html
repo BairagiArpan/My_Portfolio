@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arpan Bairagi — Full-Stack Developer & UI/UX Designer." />
+  <meta name="author" content="Arpan Bairagi" />
+  <title>Arpan Bairagi | Developer & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">My portfolio<span>.</span></div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- ══════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════ -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">My Portfolio<span class="accent">.</span></a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home"     class="nav-link" data-section="home">Home</a>
+        <a href="#about"    class="nav-link" data-section="about">About</a>
+        <a href="#skills"   class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact"  class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary nav-hire">Hire Me</a>
+        <button id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" aria-hidden="true">
+      <a href="#home"     class="mob-link">Home</a>
+      <a href="#about"    class="mob-link">About</a>
+      <a href="#skills"   class="mob-link">Skills</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#contact"  class="mob-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════
+         HERO  (Left: text  |  Right: image)
+    ══════════════════════════════════════════════ -->
+    <section id="home" class="hero">
+      <!-- decorative background -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+
+      <div class="container hero-container">
+
+        <!-- LEFT TEXT -->
+        <div class="hero-text reveal-left">
+          <span class="hero-badge"><span class="dot-pulse"></span>Available for work</span>
+
+          <h1 class="hero-name">
+            Hi, I'm<br>
+            <em>Arpan Bairagi</em>
+          </h1>
+
+          <p class="hero-bio">
+            Full-Stack Developer &amp; UI/UX Designer crafting digital experiences
+            that are fast, accessible, and unforgettable.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact"  class="btn btn-outline">Let's Talk</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <b class="counter" data-target="0">0</b><sup>+</sup>
+              <span>Years Exp.</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat">
+              <b class="counter" data-target="0">0</b><sup>+</sup>
+              <span>Projects</span>
+            </div>
+          </div>
+
+          <div class="hero-social">
+            <p class="social-label">Find me on</p>
+
+            <div class="social-icons">
+              <a href="https://github.com/BairagiArpan" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/arpan-bairagi/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/arpan_bairagi_07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://x.com/ArpanBaira34689" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+</div>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="hero-image reveal-right">
+          <div class="hero-img-frame">
+            <img
+              src="image/my_image.jpeg"
+              alt="Arpan Bairagi"
+              width="560" height="680"
+            />
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════════════ -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="two-col">
+          <div class="about-photo reveal-left">
+            <div class="about-frame">
+              <img
+                src="image/my_image.jpeg"
+                alt="Alex Morgan" width="520" height="620" loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="about-content reveal-right">
+            <p class="section-label">About me</p>
+            <h2 class="section-title">Turning ideas into<br><em>elegant code</em></h2>
+            <p class="body-text">I'm a full-stack developer with a passion for building products at the intersection of engineering and design. With 5+ years of experience, I've shipped everything from SaaS dashboards to mobile-first e-commerce platforms.</p>
+            <p class="body-text">When I'm not pushing pixels, you'll find me contributing to open-source, writing on my tech blog, or obsessing over mechanical keyboards.</p>
+            <ul class="info-list">
+              <li><i class="fa-solid fa-map-pin"></i><span>Kolkata</span></li>
+              <li><i class="fa-solid fa-envelope"></i><span>arpanbairagi0@gmail.com</span></li>
+              <li><i class="fa-solid fa-graduation-cap"></i><span>B.Tech. Electronics and Communication Engineering — TINT</span></li>
+              <li><i class="fa-solid fa-briefcase"></i><span>Open to Remote &amp; Hybrid</span></li>
+            </ul>
+            <a href="https://drive.google.com/uc?export=download&id=1XV5Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1" class="btn btn-primary" download><i class="fa-solid fa-download"></i> Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════════════ -->
+     <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-label">What I work with</p>
+          <h2 class="section-title">Skills &amp; <em>Expertise</em></h2>
+        </div>
+ 
+        <div class="skills-layout">
+          <div class="skill-bars reveal-left">
+            <h3 class="group-title">Technical Proficiency</h3>
+            <div class="skill-row"><div class="skill-top"><span>C</span><span class="pct">90%</span></div><div class="bar-track"><div class="bar-fill" data-width="90"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>Python</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>HTML</span><span class="pct">95%</span></div><div class="bar-track"><div class="bar-fill" data-width="95"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>CSS / Tailwind</span><span class="pct">95%</span></div><div class="bar-track"><div class="bar-fill" data-width="95"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>JavaScript</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>React.js</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>Node.js</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>Mongo DB</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>Express.js</span><span class="pct">75%</span></div><div class="bar-track"><div class="bar-fill" data-width="75"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>Java</span><span class="pct">50%</span></div><div class="bar-track"><div class="bar-fill" data-width="50"></div></div></div>
+            <div class="skill-row"><div class="skill-top"><span>Git &amp; CLI</span><span class="pct">80%</span></div><div class="bar-track"><div class="bar-fill" data-width="80"></div></div></div>
+          </div>
+ 
+          <div class="tool-cards reveal-right">
+            <h3 class="group-title">Tools &amp; Platforms</h3>
+            <div class="tool-grid">
+              <div class="tool-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+              <div class="tool-card"><i class="fa-solid fa-code "></i><span>VS Code</span></div>
+              <div class="tool-card"><i class="fa-solid fa-file-code"></i><span>AutoCAD</span></div>
+              <div class="tool-card"><i class="fa-solid fa-code-fork"></i><span>MATLAB</span></div>
+              <div class="tool-card"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+              <div class="tool-card"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+              <div class="tool-card"><i class="fa-brands fa-microsoft"></i><span>MS Office</span></div>
+              <div class="tool-card"><i class="fa-solid fa-brush"></i><span>Canva</span></div>
+              <div class="tool-card"><i class="fa-brands fa-linux"></i><span>Linux</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+    <!-- ══════════════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════════════ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-label">Selected work</p>
+          <h2 class="section-title">Recent <em>Projects</em></h2>
+        </div>
+
+        <div class="filter-bar reveal-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web App</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card reveal-up" data-category="web">
+            <div class="project-img"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=360&fit=crop" alt="FinTrack Dashboard" loading="lazy"/><div class="project-links"><a href="#" class="btn btn-sm btn-primary">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#" class="btn btn-sm btn-outline">GitHub <i class="fa-brands fa-github"></i></a></div></div>
+            <div class="project-body"><span class="tag">Web App</span><h3>FinTrack Dashboard</h3><p>Real-time finance analytics platform with AI-powered insights and multi-currency support.</p><ul class="stack"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul></div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="mobile">
+            <div class="project-img"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=360&fit=crop" alt="Pulse Fitness App" loading="lazy"/><div class="project-links"><a href="#" class="btn btn-sm btn-primary">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#" class="btn btn-sm btn-outline">GitHub <i class="fa-brands fa-github"></i></a></div></div>
+            <div class="project-body"><span class="tag">Mobile</span><h3>Pulse Fitness App</h3><p>Cross-platform fitness tracker with workout plans, analytics, and social challenges.</p><ul class="stack"><li>React Native</li><li>Firebase</li><li>Redux</li></ul></div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="web">
+            <div class="project-img"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=360&fit=crop" alt="ShopWave Commerce" loading="lazy"/><div class="project-links"><a href="#" class="btn btn-sm btn-primary">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#" class="btn btn-sm btn-outline">GitHub <i class="fa-brands fa-github"></i></a></div></div>
+            <div class="project-body"><span class="tag">Web App</span><h3>ShopWave Commerce</h3><p>Full-featured e-commerce with headless CMS, Stripe payments, and live inventory.</p><ul class="stack"><li>Next.js</li><li>Stripe</li><li>Sanity</li></ul></div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="design">
+            <div class="project-img"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600&h=360&fit=crop" alt="Nova Design System" loading="lazy"/><div class="project-links"><a href="#" class="btn btn-sm btn-primary">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#" class="btn btn-sm btn-outline">GitHub <i class="fa-brands fa-github"></i></a></div></div>
+            <div class="project-body"><span class="tag">Design</span><h3>Nova Design System</h3><p>80+ component design system with dark mode and Figma-to-code integration.</p><ul class="stack"><li>Figma</li><li>Storybook</li><li>CSS Vars</li></ul></div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="web">
+            <div class="project-img"><img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&h=360&fit=crop" alt="AskAI Assistant" loading="lazy"/><div class="project-links"><a href="#" class="btn btn-sm btn-primary">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#" class="btn btn-sm btn-outline">GitHub <i class="fa-brands fa-github"></i></a></div></div>
+            <div class="project-body"><span class="tag">Web App</span><h3>AskAI Assistant</h3><p>Multi-model AI chat with streaming responses, history, and file uploads.</p><ul class="stack"><li>Next.js</li><li>OpenAI</li><li>Supabase</li></ul></div>
+          </article>
+
+          <article class="project-card reveal-up" data-category="mobile">
+            <div class="project-img"><img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&h=360&fit=crop" alt="Wandr Travel App" loading="lazy"/><div class="project-links"><a href="#" class="btn btn-sm btn-primary">Live <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a href="#" class="btn btn-sm btn-outline">GitHub <i class="fa-brands fa-github"></i></a></div></div>
+            <div class="project-body"><span class="tag">Mobile</span><h3>Wandr Travel App</h3><p>AI-powered travel planner with offline maps, itinerary builder, and discovery.</p><ul class="stack"><li>Flutter</li><li>Dart</li><li>Google Maps</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════════ -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head reveal-up">
+          <p class="section-label">Get in touch</p>
+          <h2 class="section-title">Let's <em>Work Together</em></h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal-left">
+            <p class="contact-intro">Have a project in mind? My inbox is always open. Let's build something great together.</p>
+            <ul class="contact-list">
+              <li><div class="c-icon"><i class="fa-solid fa-envelope"></i></div><div><strong>Email</strong><a href="mailto:arpanbairagi0@gmail.com">arpanbairagi0@gmail.com</a></div></li>
+              <li><div class="c-icon"><i class="fa-solid fa-phone"></i></div><div><strong>Phone</strong><a href="tel:+91-7865085633">+91-7865085633</a></div></li>
+              <li><div class="c-icon"><i class="fa-solid fa-map-pin"></i></div><div><strong>Location</strong><span>Kolkata, West Bengal, India</span></div></li>
+            </ul>
+            <div class="social-row">
+              <a href="https://github.com/BairagiArpan" aria-label="GitHub"   class="social-btn"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/arpan-bairagi/" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://x.com/ArpanBaira34689" aria-label="Twitter"  class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://dribbble.com/arpanbairagi" aria-label="Dribbble" class="social-btn"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-wrap reveal-right">
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="field"><label for="name">Full Name</label><input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" required/><span class="err" role="alert"></span></div>
+                <div class="field"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required/><span class="err" role="alert"></span></div>
+              </div>
+              <div class="field"><label for="subject">Subject</label><input type="text" id="subject" name="subject" placeholder="Project inquiry" required/><span class="err" role="alert"></span></div>
+              <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea><span class="err" role="alert"></span></div>
+              <button type="submit" id="submit-btn" class="btn btn-primary b
+              </button>tn-full">
+                <span class="btn-text">Send Message <i class="fa-solid fa-paper-plane"></i></span>
+                <span class="btn-loading" aria-hidden="true"><i class="fa-solid fa-spinner fa-spin"></i> Sending…</span>
+              <div id="form-success" class="form-success" hidden>
+                <i class="fa-solid fa-circle-check"></i> Message sent! I'll reply soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo">Arpan<span class="accent">Bairagi</span></a>
+      <p>&copy; <span id="year"></span> </p>
+      <div class="social-row">
+        <a href="https://github.com/BairagiArpan" aria-label="GitHub"   class="social-btn"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/arpan-bairagi/" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/ArpanBaira34689" aria-label="Twitter"  class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
