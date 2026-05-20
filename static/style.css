@@ -423,7 +423,7 @@ input,textarea{font-family:inherit}
   align-items: center;
   justify-content: center;
   color: var(--text-2);
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: all 0.3s ease;
 }
 
@@ -817,7 +817,7 @@ input,textarea{font-family:inherit}
 /* ── 14. FOOTER ─────────────────────────────────────────────── */
 .footer{
   background:var(--bg-alt);border-top:1px solid var(--border);
-  padding:1rem 0;
+  padding:0.25rem 0;
 }
 .footer-inner{
   display:flex;align-items:center;justify-content:space-between;
