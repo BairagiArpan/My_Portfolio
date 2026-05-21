@@ -1,10 +1,3 @@
-/**
- * ================================================================
- * SCRIPT.JS — Alex Morgan Portfolio
- * Vanilla ES6+ — zero dependencies
- * ================================================================
- */
-
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ─── 1. LOADER ─────────────────────────────────────────── */
